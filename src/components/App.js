@@ -8,7 +8,7 @@ import Footer from "./Footer"
 class App extends Component {
   render() {
     return (
-      <div className="">
+      <div className="container-fluid">
         <Nav />
         <Main />
         <Footer />
