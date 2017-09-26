@@ -31,15 +31,15 @@ export default class Nav extends Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Supplies</a>
-                <i class="fa fa-arrow-right pull-right hidden-md-up" aria-hidden="true"></i>
+                <i className="fa fa-arrow-right pull-right hidden-md-up" aria-hidden="true"></i>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Resources</a>
-                <i class="fa fa-arrow-right pull-right hidden-md-up" aria-hidden="true"></i>
+                <i className="fa fa-arrow-right pull-right hidden-md-up" aria-hidden="true"></i>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Services</a>
-                <i class="fa fa-arrow-right pull-right hidden-md-up" aria-hidden="true"></i>
+                <i className="fa fa-arrow-right pull-right hidden-md-up" aria-hidden="true"></i>
               </li>
             </ul>
           </div>
