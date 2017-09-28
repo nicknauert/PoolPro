@@ -16,9 +16,9 @@ export default class ContactModal extends Component {
         <div className="modal fade" id={this.props.dealerInfo.companyID} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
-              <div className="modal-header bg-darkblue text-white">
+              <div className="modal-header bg-darkblue text-white px-5">
                 <p className="fs-small">EMAIL</p>
-                <h5 className="modal-title" id="exampleModalLabel">{this.props.dealerInfo.name}</h5>
+                <h5 className="modal-title mr-auto" id="exampleModalLabel">{this.props.dealerInfo.name}</h5>
                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true" className="oi oi-x text-white"></span>
                 </button>
@@ -29,18 +29,6 @@ export default class ContactModal extends Component {
                   <ModalInput id="customerName" type="text" display="First and Last Name"/>
                   <ModalInput id="telephoneNumber" type="tel" display="Telephone Number"/>
                   <ModalInput id="emailAddress" type="text" display="Email Address"/>
-                  {/* <div className="form-group mb-3">
-                    <label htmlFor="customerName" className="d-block mb-1">First and Last Name</label>
-                    <input type="text" className="form-control" id="customerName"/>
-                  </div>
-                  <div className="form-group mb-3">
-                    <label htmlFor="telephoneNumber" className="d-block mb-1">Telephone Number</label>
-                    <input type="tel" className="form-control" id="telephoneNumber"/>
-                  </div>
-                  <div className="form-group mb-3">
-                    <label htmlFor="emailAddress" className="d-block mb-1">Email Address</label>
-                    <input type="email" className="form-control" id="emailAddress"/>
-                  </div> */}
                   <div className="form-group mb-3">
                     <label htmlFor="comments" className="d-block mb-1">Comments or Questions</label>
                     <textarea className="form-control" id="comments" rows="3"></textarea>
