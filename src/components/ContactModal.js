@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ModalInput from './ModalInput'
 
 export default class ContactModal extends Component {
   constructor(props){
@@ -25,18 +26,21 @@ export default class ContactModal extends Component {
               <div className="modal-body">
                 <p className="fs-small mx-auto">Fill out the form below and {this.props.dealerInfo.name} will get in touch.</p>
                 <form>
-                  <div className="form-group mb-3">
+                  <ModalInput id="customerName" type="text" display="First and Last Name"/>
+                  <ModalInput id="telephoneNumber" type="tel" display="Telephone Number"/>
+                  <ModalInput id="emailAddress" type="text" display="Email Address"/>
+                  {/* <div className="form-group mb-3">
                     <label htmlFor="customerName" className="d-block mb-1">First and Last Name</label>
                     <input type="text" className="form-control" id="customerName"/>
                   </div>
                   <div className="form-group mb-3">
-                    <label htmlFor="customerName" className="d-block mb-1">Telephone Number</label>
+                    <label htmlFor="telephoneNumber" className="d-block mb-1">Telephone Number</label>
                     <input type="tel" className="form-control" id="telephoneNumber"/>
                   </div>
                   <div className="form-group mb-3">
-                    <label htmlFor="customerName" className="d-block mb-1">Email Address</label>
+                    <label htmlFor="emailAddress" className="d-block mb-1">Email Address</label>
                     <input type="email" className="form-control" id="emailAddress"/>
-                  </div>
+                  </div> */}
                   <div className="form-group mb-3">
                     <label htmlFor="comments" className="d-block mb-1">Comments or Questions</label>
                     <textarea className="form-control" id="comments" rows="3"></textarea>
