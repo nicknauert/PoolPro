@@ -4,14 +4,10 @@ import '../styles/App.css';
 export default class Nav extends Component {
 
 
-
-
-
-
   render() {
     return (
-      <div className="">
-        <div className="bg-primary hidden-md-down">
+      <div className="sticky-top shadow mb-4">
+        <div className="bg-darkblue hidden-md-down px-5">
           <ul className="nav justify-content-end">
             <li className="nav-item">
               <a href="#" className="nav-link text-white fs-small">Dealers and Distributors</a>
@@ -21,46 +17,45 @@ export default class Nav extends Component {
             </li>
           </ul>
         </div>
-        <nav className="navbar navbar-toggleable-md navbar-light bg-white">
-          <button className="navbar-toggler navbar-toggler-right rounded-left" type="button" data-toggle="collapse" data-target="#poolBar" aria-controls="poolBar" aria-expanded="false" aria-label="Toggle navigation">
+        <nav className="navbar navbar-toggleable-md navbar-light bg-white py-3 px-md-5 px-0">
+          <button className="navbar-toggler navbar-toggler-right rounded-left mt-1" type="button" data-toggle="collapse" data-target="#poolBar" aria-controls="poolBar" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <a className="navbar-brand ml-4 fs-xl text-primary" href="#"><span className="tw-black fs-xl text-primary">POOL</span>PROS</a>
-
+          <p className="navbar-brand m-0 ml-4 fs-xl text-darkblue" href="#"><span className="tw-black fs-xl text-primary">POOL</span>PROS</p>
           <div className="collapse navbar-collapse" id="poolBar">
-            <ul className="navbar-nav ml-auto mt-2 mr-3 mt-md-0 hidden-md-down">
-              <li className="nav-item my-1 mr-3 p-2">
-                <a className="nav-link text-primary" href="#">Pools & Spas</a>
+            <ul className="navbar-nav ml-auto mt-2 mt-md-0 hidden-md-down">
+              <li className="nav-item my-1 mr-3">
+                <a className="nav-link text-primary fs-small" href="#">Pools & Spas</a>
               </li>
-              <li className="nav-item my-1 mr-3 p-2">
-                <a className="nav-link text-primary" href="#">Supplies</a>
+              <li className="nav-item my-1 mr-3">
+                <a className="nav-link text-primary fs-small" href="#">Supplies</a>
               </li>
-              <li className="nav-item my-1 mr-3 p-2">
-                <a className="nav-link text-primary" href="#">Resources</a>
-                <i className="fa fa-arrow-right pull-right" aria-hidden="true"></i>
+              <li className="nav-item my-1 mr-3">
+                <a className="nav-link text-primary fs-small" href="#">Resources</a>
+
               </li>
-              <li className="nav-item my-1 mr-3 p-2">
-                <a className="nav-link text-primary" href="#">Services</a>
+              <li className="nav-item my-1 mr-3">
+                <a className="nav-link text-primary fs-small" href="#">Services</a>
               </li>
             </ul>
-            <ul className="navbar-nav mr-auto nav-border mt-0 hidden-lg-up">
-              <p className="text-primary text-center my-3">Menu</p>
+            <ul className="navbar-nav mr-auto nav-border mt-0 hidden-lg-up border-cyan">
+              <p className="text-primary text-center my-3">MENU</p>
               <li className="nav-item nav-link-border p-2 bg-faded">
-                <a className="nav-link">Pools & Spas<span className="oi oi-chevron-right float-right"></span></a>
+                <a className="nav-link">Pools & Spas<span className="oi oi-chevron-right float-right color-cyan"></span></a>
               </li>
               <li className="nav-item nav-link-border p-2 bg-faded">
-                <a className="nav-link w-100">Supplies<span className="oi oi-chevron-right float-right"></span></a>
+                <a className="nav-link w-100">Supplies<span className="oi oi-chevron-right float-right color-cyan"></span></a>
               </li>
               <li className="nav-item nav-link-border p-2 bg-faded">
-                <a className="nav-link">Resources<span className="oi oi-chevron-right float-right"></span></a>
+                <a className="nav-link">Resources<span className="oi oi-chevron-right float-right color-cyan"></span></a>
               </li>
               <li className="nav-item nav-link-border p-2 bg-faded">
-                <a className="nav-link">Services<span className="oi oi-chevron-right float-right"></span></a>
+                <a className="nav-link">Services<span className="oi oi-chevron-right float-right color-cyan"></span></a>
               </li>
             </ul>
           </div>
         </nav>
-
+        {/* <img src="./img/water.jpg" className=""/> */}
       </div>
     );
   }

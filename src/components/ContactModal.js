@@ -8,14 +8,14 @@ export default class ContactModal extends Component {
 
   render(){
     return(
-      <div className="mx-auto w-50">
-        <button type="button" className="mb-4 p-3 btn btn-secondary rounded-0" data-toggle="modal" data-target={"#"+ this.props.dealerInfo.companyID}>
+      <div className="container-fluid">
+        <button type="button" className="mb-4 py-2 px-4 btn btn-outline-primary rounded-1 text-darkblue mx-auto border-cyan" data-toggle="modal" data-target={"#"+ this.props.dealerInfo.companyID}>
           Contact This Pro
         </button>
         <div className="modal fade" id={this.props.dealerInfo.companyID} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
-              <div className="modal-header bg-primary text-white">
+              <div className="modal-header bg-darkblue text-white">
                 <p className="fs-small">EMAIL</p>
                 <h5 className="modal-title" id="exampleModalLabel">{this.props.dealerInfo.name}</h5>
                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">

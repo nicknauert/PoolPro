@@ -3,6 +3,44 @@
   font-size: 15px;
 }
 
+.social-logo {
+  width: 15px;
+  margin-right: 3px;
+}
+
+.bg-darkblue {
+  background-color: rgb(36, 59, 117);
+}
+
+.text-darkblue {
+  color: rgb(36, 59, 117);
+}
+
+.phone-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.footer-b-right {
+  border-right: 1px solid white;
+}
+
+.footer-b-bottom {
+  border-bottom: 1px solid white;
+}
+
+.filter-b-right {
+  border-right: 1px solid rgb(164, 164, 164);
+}
+
+.shadow {
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.border-cyan {
+  border-color: rgb(0, 255, 186);
+}
+
 .tw-black {
   font-weight: 900;
   font-size: 19px;
@@ -13,8 +51,8 @@
 }
 
 .nav-border {
-  border-top: 3px solid rgb(0, 0, 0);
-  border-bottom: 3px solid rgb(0, 0, 0);
+  border-top: 3px solid rgb(4, 223, 204);
+  border-bottom: 3px solid rgb(4, 223, 204);
 }
 
 .nav-link-border {
@@ -25,12 +63,20 @@
   font-size: 12px;
 }
 
+.fs-med {
+  font-size: 15px;
+}
+
 .fs-large {
   font-size: 19px;
 }
 
 .fs-xl {
   font-size: 25px
+}
+
+.color-cyan {
+  color: rgb(4, 223, 204);
 }
 
 .filterMobile {
