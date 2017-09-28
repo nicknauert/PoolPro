@@ -9,7 +9,7 @@ import Footer from "./Footer"
 class App extends Component {
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid p-0">
         <Nav />
         <Main />
         <Footer />

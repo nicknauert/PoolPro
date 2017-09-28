@@ -11,9 +11,26 @@ export default class Filter extends Component {
     this.state = {
       dealers: dealers.dealers,
       filters: [],
-      displayDealers: []
+      displayDealers: [],
+      caret: "oi oi-caret-bottom fs-small"
     }
   }
+
+
+  caretSwitch = ()=>{
+    let caret = this.state.caret;
+    if(caret === "oi oi-caret-bottom fs-small"){
+      this.setState({
+        caret: "oi oi-caret-top fs-small"
+      })
+    } else {
+      this.setState({
+        caret: "oi oi-caret-bottom fs-small"
+      })
+    }
+  }
+
+
 
 
 ///////////////  onChange Function  //////////////////////////
@@ -29,7 +46,6 @@ export default class Filter extends Component {
     } else {
       let index = oldFilters.indexOf(evtName);
       oldFilters.splice(index, 1);
-
       this.setState({
         filters: oldFilters
       })
@@ -74,14 +90,26 @@ export default class Filter extends Component {
 
   render() {
     return (
-      <div>
-        <div className="bg-faded p-3">
+      <div className="px-md-5">
+        <div className="bg-faded p-3 hidden-lg-up px-4">
+          <div className="d-flex flex-row justify-content-end align-items-baseline mb-0">
+            <p className="text-primary mr-auto mb-0 pb-0">{this.state.displayDealers.length} dealers in 29418</p>
+            <div className="d-flex flex-row flex-nowrap justify-content-center align-items-end border-light bg-white p-0 m-0">
+              <p className="mx-2 my-1 bg-white">Filter Results</p>
+              <button className="btn btn-outline-secondary ol-0 rounded-0 h-100 border-right-0 border-top-0 border-bottom-0" type="button" data-toggle="collapse" data-target="#resultsFilter" aria-expanded="false" aria-controls="resultsFilter" onClick={this.caretSwitch}><span className={this.state.caret}></span></button>
+            </div>
+
+          </div>
+          <div className="collapse bg-white px-3 py-4 border-light" id="resultsFilter">
+            <CheckBox key="Commercial Pro" onChange={this._handleChange} name="Commercial Pro"/>
+            <CheckBox key="Residential Pro" onChange={this._handleChange} name="Residential Pro"/>
+            <CheckBox key="Installation Pro" onChange={this._handleChange} name="Installation Pro"/>
+            <CheckBox key="Service Pro" onChange={this._handleChange} name="Service Pro"/>
+          </div>
+        </div>
+        <div className="bg-faded container-fluid p-3 hidden-md-down">
           <div className="d-flex flex-row justify-content-end align-items-baseline">
             <p className="text-primary mr-auto">{this.state.displayDealers.length} dealers in 29418</p>
-            <p className="mr-2">Filter Results</p>
-            <button className="btn btn-primary" type="button" data-toggle="collapse" data-target="#resultsFilter" aria-expanded="false" aria-controls="resultsFilter"><span className="oi oi-chevron-bottom"></span></button>
-          </div>
-          <div className="collapse" id="resultsFilter">
             <CheckBox key="Commercial Pro" onChange={this._handleChange} name="Commercial Pro"/>
             <CheckBox key="Residential Pro" onChange={this._handleChange} name="Residential Pro"/>
             <CheckBox key="Installation Pro" onChange={this._handleChange} name="Installation Pro"/>
@@ -90,7 +118,6 @@ export default class Filter extends Component {
         </div>
         <Results key="" dealers={this.state.displayDealers}/>
       </div>
-
     );
   }
 }

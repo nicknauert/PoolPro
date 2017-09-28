@@ -1,4 +1,55 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+}
+
+.tw-black {
+  font-weight: 900;
+  font-size: 19px;
+}
+
+.tw-light {
+  font-weight: 300;
+}
+
+.nav-border {
+  border-top: 3px solid rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.nav-link-border {
+  border-bottom: 1px solid white;
+}
+
+.fs-small {
+  font-size: 12px;
+}
+
+.fs-large {
+  font-size: 19px;
+}
+
+.fs-xl {
+  font-size: 25px
+}
+
 .filterMobile {
   display: flex;
   flex-flow: row nowrap;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.border-light {
+  border: 1px solid rgb(199, 197, 199);
+}
+
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.ol-0:active {
+  outline: none;
 }
