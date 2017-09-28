@@ -3,6 +3,11 @@
   font-size: 15px;
 }
 
+.waterCont {
+  height: 140px;
+  /*overflow: hidden;*/
+}
+
 .social-logo {
   width: 15px;
   margin-right: 3px;

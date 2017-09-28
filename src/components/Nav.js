@@ -55,7 +55,6 @@ export default class Nav extends Component {
             </ul>
           </div>
         </nav>
-        {/* <img src="./img/water.jpg" className=""/> */}
       </div>
     );
   }

@@ -16,12 +16,13 @@ export default class ContactModal extends Component {
         <div className="modal fade" id={this.props.dealerInfo.companyID} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
-              <div className="modal-header bg-darkblue text-white px-5">
-                <p className="fs-small">EMAIL</p>
-                <h5 className="modal-title mr-auto" id="exampleModalLabel">{this.props.dealerInfo.name}</h5>
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+              <div className=" bg-darkblue text-white px-5 pt-3">
+                <button type="button" className="close mb-5 float-right" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true" className="oi oi-x text-white"></span>
                 </button>
+                <p className="fs-small my-0">EMAIL</p>
+                <h5 className="modal-title mr-auto" id="exampleModalLabel">{this.props.dealerInfo.name}</h5>
+
               </div>
               <div className="modal-body">
                 <p className="fs-small mx-auto">Fill out the form below and {this.props.dealerInfo.name} will get in touch.</p>

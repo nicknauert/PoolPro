@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Water from './Water'
 import '../styles/App.css';
 
 import Nav from "./Nav"
@@ -11,6 +12,7 @@ class App extends Component {
     return (
       <div className="container-fluid p-0">
         <Nav />
+        <Water />
         <Main />
         <Footer />
       </div>
