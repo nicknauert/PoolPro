@@ -21,7 +21,7 @@ export default class Nav extends Component {
           <button className="navbar-toggler navbar-toggler-right rounded-left mt-1" type="button" data-toggle="collapse" data-target="#poolBar" aria-controls="poolBar" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <p className="navbar-brand m-0 ml-4 fs-xl text-darkblue" href="#"><span className="tw-black fs-xl text-primary">POOL</span>PROS</p>
+          <p className="navbar-brand m-0 ml-4 fs-xl pl-4 text-darkblue" href="#"><img src="./img/logo.png" className="nav-logo" /></p>
           <div className="collapse navbar-collapse" id="poolBar">
             <ul className="navbar-nav ml-auto mt-2 mt-md-0 hidden-md-down">
               <li className="nav-item my-1 mr-3">
@@ -35,7 +35,7 @@ export default class Nav extends Component {
 
               </li>
               <li className="nav-item my-1 mr-3">
-                <a className="nav-link text-primary fs-small" href="#">Services</a>
+                <a className="nav-link text-primary fs-small pr-4" href="#">Services</a>
               </li>
             </ul>
             <ul className="navbar-nav mr-auto nav-border mt-0 hidden-lg-up border-cyan">
@@ -59,31 +59,3 @@ export default class Nav extends Component {
     );
   }
 }
-
-/*
-
-<div className="navbar navbar-toggleable-lg p-5">
-  <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <a className="navbar-brand" href="#">Pool Pros</a>
-  <div className="collapse navbar-collapse" id="navbarToggle">
-    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li className="nav-item active">
-        <a className="nav-link" href="#">Home<span className="sr-only">(current)</span></a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <button href="#" className="btn btn-primary">Find A Pool Pro</button>
-  </div>
-
-</div>
-
-
-
-*/

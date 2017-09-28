@@ -6,7 +6,7 @@ export default class Water extends Component {
   render(){
     return(
       <div className="waterCont w-100">
-        <img src="./img/water.png" className="pb-0"/>
+        <img src="./img/water.png" className="pb-0 water-pos"/>
       </div>
 
     )

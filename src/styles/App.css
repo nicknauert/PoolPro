@@ -4,8 +4,21 @@
 }
 
 .waterCont {
-  height: 140px;
-  /*overflow: hidden;*/
+  height: 110px;
+  overflow: hidden;
+}
+
+.water-pos {
+  position: relative;
+  bottom: 20px;
+}
+
+.nav-logo {
+  width: 150px;
+}
+
+.footer-logo {
+  width: 150px;
 }
 
 .social-logo {

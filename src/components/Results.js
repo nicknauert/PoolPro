@@ -30,7 +30,7 @@ export default class Results extends Component {
                   <p className="m-0">Saturdays {(data.weekHours.sat==="") ? "- CLOSED" : data.weekHours.sat}</p>
                   <p className="m-0">Sundays {(data.weekHours.sun==="") ? "- CLOSED" : data.weekHours.sun}</p>
                 </div>
-                <div className="container w-100 d-flex flex-row flex-wrap bg-faded px-5 py-2 mt-auto">
+                <div className="container w-100 d-flex flex-row flex-wrap bg-faded px-5 pt-2 mt-auto">
                   {data.certifications.map((cert)=>{
                     return <p key={cert} className="text-muted w-50">{cert}</p>
                   })}

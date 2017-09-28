@@ -82,15 +82,15 @@ export default class Filter extends Component {
 
 ////////////////////LIFE CYCLES/////////////////////
 
-
-  componentDidUpdate(){
-    console.log(this.state.filters, this.state.displayDealers);
+  componentDidMount(){
+    this.setState({
+      displayDealers: this.state.dealers
+    })
   }
-
 
   render() {
     return (
-      <div className="px-md-5">
+      <div className="px-md-5 mx-md-5">
 
         <div className="bg-faded p-3 hidden-lg-up px-4">
           <div className="d-flex flex-row justify-content-end align-items-baseline mb-0">
@@ -120,31 +120,12 @@ export default class Filter extends Component {
               <CheckBox key="Residential Pro" onChange={this._handleChange} name="Residential Pro"/>
               <CheckBox key="Installation Pro" onChange={this._handleChange} name="Installation Pro"/>
               <CheckBox key="Service Pro" onChange={this._handleChange} name="Service Pro"/>
-            </div>  
+            </div>
           </div>
 
         </div>
-        <Results key="" dealers={this.state.displayDealers}/>
+        <Results key='' dealers={this.state.displayDealers}/>
       </div>
     );
   }
 }
-
-/*
-<div className="form-check">
-  <label className="form-check-label">
-    <input className="form-check-input mr-2" type="checkbox" name="Service Pro" onChange={this._handleChange}/>Service</label>
-</div>
-<div className="form-check">
-  <label className="form-check-label">
-  <input className="form-check-input mr-2" onChange={this._handleChange} type="checkbox" name="Installation Pro"/>Installation</label>
-</div>
-<div className="form-check">
-  <label className="form-check-label">
-  <input className="form-check-input mr-2" onChange={this._handleChange} type="checkbox" name="Residential Pro"/>Residential</label>
-</div>
-<div className="form-check">
-  <label className="form-check-label">
-  <input className="form-check-input mr-2" onChange={this._handleChange} type="checkbox" name="Commercial Pro"/>Commercial</label>
-</div>
-*/

@@ -5,8 +5,8 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="container-fluid justify-content-center m-0 mt-5 p-0 footer-pos">
-        <div className="bg-darkblue container-fluid text-center py-3">
-          <p className="fs-xl tw-light text-white mb-1" href="#"><span className="tw-black fs-xl text-white">POOL</span>PROS</p>
+        <div className="bg-darkblue container-fluid text-center py-4">
+          <img src="./img/fade-logo.png" className="footer-logo mx-auto d-block mb-2" />
           <p className="text-white tw-black fs-small d-inline mr-4">CONNECT WITH US</p><img className="social-logo" src="./img/twitter.png"/><img className="social-logo" src="./img/facebook.png"/><img className="social-logo" src="./img/youtube.png"/>
         </div>
         <div className="container-fluid bg-primary d-flex p-0 flex-column align-items-center">
@@ -20,7 +20,6 @@ export default class Footer extends Component {
             <p className="text-white fs-small px-3 m-0">Terms and Conditions</p>
           </div>
         </div>
-
       </div>
     );
   }
